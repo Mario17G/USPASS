@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block title %}INFORMATION{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/information.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="info">
+
+    <h1>Information</h1>
+
+    This is a page that will help you whenever you encounter a blockage 
+    for when you need to create a user and/or password. <br><br>
+
+    The user will be created based on a hobby, your birth date, and your name.<br><br>
+
+    The password will be formed from the alphabet and will be of
+    the length you give it, plus you can choose whether you want it to be made up
+    of special characters and/or numbers and/or capital letters.
+</div>
+    
+{% endblock  %}

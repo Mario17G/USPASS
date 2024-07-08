@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block title %}USPASS RESULT{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/result.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="result">
+
+    <h2>{{title}}</h2>
+
+    <label>{{ craft }}</label>
+    
+</div>
+    
+{% endblock  %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}USPASS{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+
+    <nav class="main-nav">
+        <div class="title"><a href="{% url 'home' %}">USPASS</a></div>
+        <div class="links">
+            <a href="{% url 'user' %}">USER</a>
+            <a href="{% url 'password' %}">PASSWORD</a>
+            <a href="{%url 'information' %}">INFORMATION</a>
+        </div>
+    </nav>
+    
+    {% block content %}
+
+    <nav class="button-nav">
+        <a href="{% url 'user' %}" class="button">CREATE USER</a>
+        <a href="{% url 'password' %}" class="button">CREATE PASSWORD</a>
+    </nav>
+    
+    {% endblock  %}
+
+    <footer>
+        © 2024 By Mario Iahveh 
+    </footer>
+
+</body>
+</html>

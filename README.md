@@ -10,3 +10,7 @@ USPASS
     of special characters and/or numbers and/or capital letters.
 
     This project was made with the python framework "django"
+
+
+    ![Uspass](https://github.com/Mario17G/USPASS/raw/main/images/menu.jpg)
+
